@@ -513,5 +513,11 @@ footer, .content-page:after {
     text-decoration: none;
     font-size: .8em;
     font-weight: 800; }
+    .header-chart a i {
+      font-size: .8em; }
+    .header-chart a:hover {
+      color: #b9bbbd; }
+    .header-chart a:hover i:before {
+      color: #b9bbbd; }
 
 /*# sourceMappingURL=main.css.map */

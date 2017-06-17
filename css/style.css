@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?hwfit6');
-  src:  url('../fonts/icomoon.eot?hwfit6#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?hwfit6') format('truetype'),
-    url('../fonts/icomoon.woff?hwfit6') format('woff'),
-    url('../fonts/icomoon.svg?hwfit6#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?qisdu8');
+  src:  url('../fonts/icomoon.eot?qisdu8#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qisdu8') format('truetype'),
+    url('../fonts/icomoon.woff?qisdu8') format('woff'),
+    url('../fonts/icomoon.svg?qisdu8#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-right2:before {
+  content: "\e900";
+}
 .icon-arrow-left-ico2:before {
   content: "\e913";
   color: #fff;
@@ -90,18 +93,4 @@
 .icon-wrong-ico2:before {
   content: "\e923";
   color: #ff6161;
-}
-
-/**icon-png**/
-
-.icon-hemoglobin {
-  height: 24px;
-  background: url("../img/hemoglobin-ico.png") 0 50% no-repeat;
-  background-size: contain;
-}
-
-.icon-urinary {
-  height: 24px;
-  background: url("../img/urinaty-ico.png") 0 50% no-repeat;
-  background-size: contain;
 }

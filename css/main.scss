@@ -180,6 +180,7 @@ footer, .content-page:after {
   }
   li:last-child {
     padding: 0 0 0 5px;
+
   }
 }
 
@@ -197,5 +198,11 @@ footer, .content-page:after {
     text-decoration: none;
     font-size: .8em;
     font-weight: 800;
+    i { font-size: .8em}
+    &:hover {
+      color: $light-text-color;
+    }
+    &:hover i:before {
+      color: $light-text-color; }
   }
 }
