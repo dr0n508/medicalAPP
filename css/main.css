@@ -317,6 +317,16 @@ footer {
     .list-medical-indicators .wrap-medical-indicator .value-medical-indicator.bad {
       color: #ff6161; }
 
+#chart1 .ct-series-a .ct-line {
+  stroke: #466d98; }
+#chart1 .ct-series-a .ct-point {
+  stroke-width: 0; }
+
+#chart2 .ct-series-a .ct-line {
+  stroke: #39affa; }
+#chart2 .ct-series-a .ct-point {
+  stroke-width: 0; }
+
 * {
   box-sizing: border-box;
   margin: 0;
