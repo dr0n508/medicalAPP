@@ -12,6 +12,18 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   padding: 0;
   font-family: 'Open Sans', sans-serif !important;
   font-size: 14px; }
+  @media only screen and (min-width: 1200px) {
+    * {
+      font-size: 22px; } }
+  @media only screen and (max-width: 1200px) {
+    * {
+      font-size: 18px; } }
+  @media only screen and (max-width: 992px) {
+    * {
+      font-size: 16px; } }
+  @media only screen and (max-width: 768px) {
+    * {
+      font-size: 14px; } }
 
 .btn-back {
   color: white;
@@ -131,7 +143,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   margin: 0 auto; }
   @media only screen and (min-width: 1200px) {
     .container {
-      width: 1140px; } }
+      width: 970px; } }
   @media only screen and (max-width: 1200px) {
     .container {
       width: 970px; } }
@@ -279,11 +291,14 @@ footer, .content-page:after {
       justify-content: flex-start;
       align-items: center; }
       .list-medical-indicators .wrap-medical-indicator .medical-indicator i {
-        width: 25px; }
+        width: 25px;
+        flex-shrink: 0; }
+        @media only screen and (min-width: 1200px) {
+          .list-medical-indicators .wrap-medical-indicator .medical-indicator i {
+            width: 40px; } }
       .list-medical-indicators .wrap-medical-indicator .medical-indicator i:before {
         font-size: 1.5em; }
       .list-medical-indicators .wrap-medical-indicator .medical-indicator .name-medical-indicator {
-        width: 75%;
         font-size: 1em;
         font-weight: 800;
         text-transform: uppercase;
@@ -401,7 +416,8 @@ footer, .content-page:after {
     .table tr th:last-child {
       padding-right: 10px; }
   .table tr td {
-    padding: 25px 10px 0; }
+    padding: 25px 10px 0;
+    text-align: center; }
   .table tr .value {
     font-weight: 800; }
   .table tr .value.good {

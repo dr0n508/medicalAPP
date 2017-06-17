@@ -9,7 +9,7 @@
   width: 100%;
   margin: 0 auto;
   @media only screen and (min-width: 1200px) {
-    width: 1140px;
+    width: 970px;
   }
   @media only screen and (max-width: 1200px) {
     width: 970px;
@@ -162,6 +162,7 @@ footer {
   font-size: 1.1em;
 }
 
+
 html, body {
   height: 100%;
 }
@@ -196,10 +197,16 @@ footer, .content-page:after {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      i {  width: 25px; }
-      i:before { font-size: 1.5em; }
+      i {
+        width: 25px;
+        flex-shrink: 0;
+        @media only screen and (min-width: 1200px) {
+          width: 40px;
+        }
+      }
+      i:before { font-size: 1.5em;}
       .name-medical-indicator {
-        width: 75%;
+        //width: 75%;
         font-size: 1em;
         font-weight: 800;
         text-transform: uppercase;
@@ -344,6 +351,7 @@ footer, .content-page:after {
     }
     td {
       padding: 25px 10px 0;
+      text-align: center;
     }
     .value {
       font-weight: 800;
