@@ -105,6 +105,32 @@ footer {
   &:-ms-input-placeholder      {color:$light-text-color; }
 }
 
+.wrap-input-info {
+  margin-bottom: 10px;
+  input {
+    margin-bottom: 0;
+  }
+  position: relative;
+  .btn-info {
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+  }
+  .tooltip {
+    display: none;
+    padding: 10px 10px 0 10px;
+    p {
+      font-size: .8em;
+      i {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
 .label-radio {
   color: $light-text-color;
   text-transform: uppercase;
@@ -255,6 +281,6 @@ footer, .content-page:after {
   color: $main-text-color;
 }
 
-.form-register, .form-reset-password {
+.form-register, .form-reset-password, .form-add-measurements {
   margin: 20px 0;
 }

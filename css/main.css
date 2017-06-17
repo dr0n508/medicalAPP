@@ -200,6 +200,26 @@ footer {
   .main-input:-ms-input-placeholder {
     color: #b9bbbd; }
 
+.wrap-input-info {
+  margin-bottom: 10px;
+  position: relative; }
+  .wrap-input-info input {
+    margin-bottom: 0; }
+  .wrap-input-info .btn-info {
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px; }
+  .wrap-input-info .tooltip {
+    display: none;
+    padding: 10px 10px 0 10px; }
+    .wrap-input-info .tooltip p {
+      font-size: .8em; }
+      .wrap-input-info .tooltip p i {
+        margin-right: 5px; }
+
 .label-radio {
   color: #b9bbbd;
   text-transform: uppercase;
@@ -330,7 +350,7 @@ footer, .content-page:after {
   font-size: 1em;
   color: #11354e; }
 
-.form-register, .form-reset-password {
+.form-register, .form-reset-password, .form-add-measurements {
   margin: 20px 0; }
 
 /*# sourceMappingURL=main.css.map */
