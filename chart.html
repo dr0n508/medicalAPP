@@ -6,6 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MedecineApp</title>
+
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -33,6 +38,7 @@
                 <div>
                     <h2 class="name-graph">Systolic (Upper Number)</h2>
                     <a href="#">View data</a>
+                    <div class="ct-chart-systolic"></div>
 
                 </div>
             </div>
@@ -41,6 +47,7 @@
                 <div>
                     <h2 class="name-graph">Diastolic (Lower Number)</h2>
                     <a href="#">View data</a>
+                    <!--<div class="ct-chart-diastolic ct-perfect-fourth"></div>-->
 
                 </div>
             </div>
@@ -62,5 +69,8 @@
         </ul>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
