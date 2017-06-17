@@ -199,4 +199,66 @@ html, body {
 footer, .content-page:after {
   height: 61px; }
 
+.list-count {
+  background-color: #ebf1f7;
+  padding: 20px 10px; }
+  .list-count .wrap-count {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 6px 20px 0px rgba(44, 81, 97, 0.15); }
+    .list-count .wrap-count .count {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .list-count .wrap-count .count i {
+        width: 25px; }
+      .list-count .wrap-count .count i:before {
+        font-size: 1.5em; }
+      .list-count .wrap-count .count .name-count {
+        width: 75%;
+        font-size: 1em;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #11354e;
+        margin-left: 10px; }
+    .list-count .wrap-count .value {
+      font-size: 1.15em;
+      font-weight: 600;
+      position: relative;
+      margin-right: 20px; }
+      .list-count .wrap-count .value:after {
+        content: '\e914';
+        font-family: 'icomoon' !important;
+        font-size: .5em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        color: #999999; }
+    .list-count .wrap-count .value.good {
+      color: #28b857; }
+    .list-count .wrap-count .value.fair {
+      color: #ffc001; }
+    .list-count .wrap-count .value.bad {
+      color: #ff6161; }
+
+.no-padding {
+  padding: 0; }
+
+.icon-hemoglobin {
+  height: 24px;
+  background: url("../img/hemoglobin-ico.png") 0 50% no-repeat;
+  background-size: contain; }
+
+.icon-urinary {
+  height: 24px;
+  background: url("../img/urinaty-ico.png") 0 50% no-repeat;
+  background-size: contain; }
+
 /*# sourceMappingURL=main.css.map */

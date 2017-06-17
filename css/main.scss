@@ -122,4 +122,81 @@ footer, .content-page:after {
 }
 
 
+.list-count {
+  background-color: #ebf1f7;
+  padding: 20px 10px;
+  .wrap-count {
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    box-shadow: 0px 6px 20px 0px rgba(44, 81, 97, 0.15);
+
+    .count {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      i {
+        width: 25px;
+      }
+      i:before { font-size: 1.5em; }
+      .name-count {
+        width: 75%;
+        font-size: 1em;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $main-text-color;
+        margin-left: 10px;
+      }
+    }
+    .value {
+      font-size: 1.15em;
+      font-weight: 600;
+      position: relative;
+      margin-right: 20px;
+      &:after {
+        content: '\e914';
+        font-family: 'icomoon' !important;
+        font-size: .5em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        color: #999999;
+      }
+    }
+    .value.good {
+      color: $green-color;
+    }
+    .value.fair {
+      color: $orange-color;
+    }
+    .value.bad {
+      color: $red-color;
+    }
+  }
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
+.icon-hemoglobin {
+  height: 24px;
+  background: url("../img/hemoglobin-ico.png") 0 50% no-repeat;
+  background-size: contain;
+}
+
+.icon-urinary {
+  height: 24px;
+  background: url("../img/urinaty-ico.png") 0 50% no-repeat;
+  background-size: contain;
+}
+
+
 
