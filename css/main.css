@@ -221,6 +221,8 @@ header {
   text-decoration: none; }
   .header-home .btn-add i:before {
     font-size: 1.2em; }
+  .header-home .btn-add:hover i:before {
+    color: #b9bbbd; }
 
 footer {
   padding: 15px 0;

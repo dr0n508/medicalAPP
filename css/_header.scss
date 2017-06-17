@@ -24,5 +24,9 @@ header {
     transform: translateY(-50%);
     text-decoration: none;
     i:before { font-size: 1.2em}
+    &:hover i:before {
+      color: $light-text-color;
+
+    }
   }
 }
