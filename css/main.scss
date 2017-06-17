@@ -347,6 +347,7 @@ footer, .content-page:after {
       font-size: .8em;
       &:first-child {
         padding-left: 10px;
+        text-align: left;
       }
       &:last-child {
         padding-right: 10px;
@@ -355,6 +356,9 @@ footer, .content-page:after {
     td {
       padding: 25px 10px 0;
       text-align: center;
+      &:first-child {
+        text-align: left;
+      }
     }
     .value {
       font-weight: 800;
