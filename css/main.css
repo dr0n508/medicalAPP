@@ -56,6 +56,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   background-color: #28b857;
   color: white;
   border-radius: 5px; }
+  .btn-graph:hover {
+    background-color: #28a452; }
 
 .main-input {
   width: 100%;
@@ -408,6 +410,9 @@ footer, .content-page:after {
   height: 1px;
   background-color: #b9bbbd;
   margin: 25px 0 15px; }
+
+.main-content.home {
+  background-color: #ebf1f7; }
 
 .progress-bars {
   padding: 20px 0;

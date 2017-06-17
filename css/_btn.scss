@@ -31,7 +31,7 @@
 .btn-big.green {
   background-color: $green-color;
   &:hover {
-    background-color: #28a452;;
+    background-color: #28a452;
   }
 }
 
@@ -51,6 +51,9 @@
   background-color: $green-color;
   color: white;
   border-radius: 5px;
+  &:hover {
+    background-color: #28a452;
+  }
 }
 
 
