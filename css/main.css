@@ -15,6 +15,10 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .btn-back i {
     font-size: .8em;
     margin-right: 10px; }
+  .btn-back:hover {
+    color: #b9bbbd; }
+  .btn-back:hover i:before {
+    color: #b9bbbd; }
 
 .btn-big {
   display: inline-block;
@@ -34,6 +38,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
 
 .btn-big.green {
   background-color: #28b857; }
+  .btn-big.green:hover {
+    background-color: #28a452; }
 
 .btn-big.orange {
   background-color: #ffc001; }
@@ -42,7 +48,7 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   display: inline-block;
   width: 80%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: .67em;
   text-align: center;
   text-transform: uppercase;
@@ -64,6 +70,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     color: #b9bbbd; }
   .main-input:-ms-input-placeholder {
     color: #b9bbbd; }
+  .main-input:focus, .main-input:hover, .main-input:active {
+    border: solid 1px #466d98; }
 
 .wrap-input-info {
   margin-bottom: 10px;
@@ -102,8 +110,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
       margin-right: 5px; }
 
 .tooltip.wrong {
-  padding: 0 10px 10px 0;
-  color: #ff6161; }
+  padding: 0 10px 10px 0; }
+  .tooltip.wrong p {
+    color: #ff6161; }
 
 .label-radio {
   color: #b9bbbd;
@@ -340,14 +349,20 @@ footer {
   color: #11354e; }
   @media only screen and (min-width: 1200px) {
     * {
-      font-size: 22px; } }
+      font-size: 24px; } }
   @media only screen and (max-width: 1200px) {
     * {
-      font-size: 18px; } }
+      font-size: 22px; } }
   @media only screen and (max-width: 992px) {
     * {
-      font-size: 16px; } }
+      font-size: 20px; } }
   @media only screen and (max-width: 768px) {
+    * {
+      font-size: 18px; } }
+  @media only screen and (max-width: 600px) {
+    * {
+      font-size: 17px; } }
+  @media only screen and (max-width: 400px) {
     * {
       font-size: 14px; } }
 

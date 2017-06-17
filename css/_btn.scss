@@ -5,6 +5,10 @@
   text-transform: uppercase;
   color: white;
   i { font-size: .8em; margin-right: 10px}
+  &:hover {
+    color: $light-text-color;
+  }
+  &:hover i:before { color:$light-text-color; }
 }
 
 .btn-big {
@@ -26,6 +30,9 @@
 
 .btn-big.green {
   background-color: $green-color;
+  &:hover {
+    background-color: #28a452;;
+  }
 }
 
 .btn-big.orange {
@@ -36,7 +43,7 @@
   display: inline-block;
   width: 80%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 15px 0;
   font-size: .67em;
   text-align: center;
   text-transform: uppercase;

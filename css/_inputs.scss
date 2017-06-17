@@ -8,6 +8,9 @@
   &::-webkit-input-placeholder {color:$light-text-color; }
   &::-moz-placeholder          {color:$light-text-color; }
   &:-ms-input-placeholder      {color:$light-text-color; }
+  &:focus, &:hover, &:active {
+    border: solid 1px $blue-color;
+  }
 }
 
 .wrap-input-info {
@@ -49,7 +52,8 @@
 }
 .tooltip.wrong {
   padding: 0 10px 10px 0;
-  color: $red-color;
+  p { color: $red-color; }
+
 }
 
 .label-radio {
