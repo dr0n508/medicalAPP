@@ -219,6 +219,9 @@ footer {
       font-size: .8em; }
       .wrap-input-info .tooltip p i {
         margin-right: 5px; }
+  .wrap-input-info .tooltip.wrong {
+    display: block;
+    color: #ff6161; }
 
 .label-radio {
   color: #b9bbbd;
