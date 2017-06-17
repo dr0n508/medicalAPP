@@ -36,6 +36,19 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   border: none;
   outline: none; }
 
+.btn-graph {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #28b857;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: .67em; }
+
 .btn-big.green {
   background-color: #28b857; }
 
@@ -142,26 +155,32 @@ header {
     transform: translateY(-50%);
     left: 10px; }
 
-.main-content {
-  padding: 20px 0; }
+.header-home .btn-add {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  text-decoration: none;
+  right: 10px; }
+  .header-home .btn-add i:before {
+    font-size: 1.2em; }
 
 footer {
   box-shadow: 0px 0px 19.6px 0.4px rgba(1, 2, 2, 0.17);
   overflow: hidden;
   padding: 15px 0; }
-  footer ul li {
+  footer .nav li {
     float: left;
     width: 25%;
     text-align: center;
     cursor: pointer; }
-    footer ul li a {
+    footer .nav li a {
       text-decoration: none; }
-      footer ul li a i:before {
+      footer .nav li a i:before {
         font-size: 30px;
         color: #b7b9ce !important; }
-    footer ul li a:hover i:before {
+    footer .nav li a:hover i:before {
       color: #466d98 !important; }
-  footer ul li.active a i:before {
+  footer .nav li.active a i:before {
     color: #466d98 !important; }
 
 .main-input {
@@ -250,5 +269,28 @@ footer, .content-page:after {
 
 .no-padding {
   padding: 0; }
+
+.progress-bars {
+  padding: 20px 0;
+  overflow: hidden;
+  background-color: #466d98; }
+  .progress-bars .wrap-progres-bar {
+    width: 50%;
+    float: left;
+    padding: 0 10px; }
+    .progress-bars .wrap-progres-bar:first-child {
+      padding: 0 5px 0 10px; }
+    .progress-bars .wrap-progres-bar:last-child {
+      padding: 0 10px 0 5px; }
+    .progress-bars .wrap-progres-bar .name-progres-bar {
+      font-size: .8em;
+      text-transform: uppercase;
+      text-align: center; }
+  .progress-bars .body-mass-index, .progress-bars .hip-2-waist-ratio {
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    height: 200px;
+    background-color: white; }
 
 /*# sourceMappingURL=main.css.map */
