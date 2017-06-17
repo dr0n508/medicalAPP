@@ -100,14 +100,17 @@ footer {
   footer ul li {
     float: left;
     width: 25%;
-    text-align: center; }
+    text-align: center;
+    cursor: pointer; }
     footer ul li a {
       text-decoration: none; }
       footer ul li a i:before {
         font-size: 30px;
         color: #b7b9ce !important; }
-    footer ul li a:hover i:before {
+    footer ul li:hover a i:before {
       color: #466d98 !important; }
+  footer ul li.active a i:before {
+    color: #466d98 !important; }
 
 .main-input {
   width: 100%;

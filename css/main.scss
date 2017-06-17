@@ -55,22 +55,25 @@ footer {
   overflow: hidden;
   padding: 15px 0;
 
-  ul li {
-    float: left;
-    width: 25%;
-    text-align: center;
-    a {
-      text-decoration: none;
-      i:before {
-        font-size: 30px;
-        color: #b7b9ce !important;
+  ul {
+    li {
+      float: left;
+      width: 25%;
+      text-align: center;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        i:before {
+          font-size: 30px;
+          color: #b7b9ce !important;
+        }
       }
+      &:hover a i:before { color: $blue-color !important}
     }
-    a:hover {
-      i:before { color: $blue-color !important}
-    }
+    li.active a i:before { color: $blue-color !important}
   }
 }
+
 
 .main-input {
   width: 100%;
