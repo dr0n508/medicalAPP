@@ -52,10 +52,6 @@ header {
   }
 }
 
-.content-page {
-  padding: 20px 0 ;
-}
-
 
 
 footer {
@@ -92,6 +88,10 @@ footer {
   border: solid 1px $light-text-color;
   padding: 15px;
   margin-bottom: 10px;
+  font-size: 22px;
+  &::-webkit-input-placeholder {color:$light-text-color; }
+  &::-moz-placeholder          {color:$light-text-color; }
+  &:-ms-input-placeholder      {color:$light-text-color; }
 }
 
 .label-radio {
@@ -100,5 +100,22 @@ footer {
   font-weight: 600;
   font-size: 24px;
 }
+
+html, body {
+  height: 100%;
+}
+.content-page {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -61px;
+}
+.content-page:after {
+  content: "";
+  display: block;
+}
+footer, .content-page:after {
+  height: 61px;
+}
+
 
 

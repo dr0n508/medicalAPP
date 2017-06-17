@@ -97,9 +97,6 @@ header {
     transform: translateY(-50%);
     left: 10px; }
 
-.content-page {
-  padding: 20px 0; }
-
 footer {
   box-shadow: 0px 0px 19.6px 0.4px rgba(1, 2, 2, 0.17);
   overflow: hidden;
@@ -124,12 +121,34 @@ footer {
   border-radius: 5px;
   border: solid 1px #b9bbbd;
   padding: 15px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 22px; }
+  .main-input::-webkit-input-placeholder {
+    color: #b9bbbd; }
+  .main-input::-moz-placeholder {
+    color: #b9bbbd; }
+  .main-input:-ms-input-placeholder {
+    color: #b9bbbd; }
 
 .label-radio {
   color: #b9bbbd;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 24px; }
+
+html, body {
+  height: 100%; }
+
+.content-page {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -61px; }
+
+.content-page:after {
+  content: "";
+  display: block; }
+
+footer, .content-page:after {
+  height: 61px; }
 
 /*# sourceMappingURL=main.css.map */
