@@ -19,7 +19,7 @@
   }
   @media only screen and (max-width: 768px) {
     width: 100%;
-    padding: 0 5px;
+    padding: 0 10px;
   }
 }
 
@@ -38,9 +38,17 @@ header {
   background-color: $blue-color;
   color: white;
   padding: 15px 0;
+  position: relative;
   .name-window {
     font-size: 24px;
     font-weight: 600;
+    text-align: center;
+  }
+  .btn-back {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
   }
 }
 
@@ -68,7 +76,10 @@ footer {
           color: #b7b9ce !important;
         }
       }
-      &:hover a i:before { color: $blue-color !important}
+      a:hover {
+        i:before { color: $blue-color !important}
+      }
+      //&:hover a i:before { color: $blue-color !important}
     }
     li.active a i:before { color: $blue-color !important}
   }
