@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     $('.btn-info').click(function () {
-        $(this).next('.tooltip').show();
+        $(this).parent().next('.tooltip').show();
         $(this).hide();
     })
 

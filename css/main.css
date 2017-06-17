@@ -212,16 +212,33 @@ footer {
     top: 50%;
     transform: translateY(-50%);
     right: 15px; }
-  .wrap-input-info .tooltip {
-    display: none;
-    padding: 10px 10px 0 10px; }
-    .wrap-input-info .tooltip p {
-      font-size: .8em; }
-      .wrap-input-info .tooltip p i {
-        margin-right: 5px; }
-  .wrap-input-info .tooltip.wrong {
-    display: block;
-    color: #ff6161; }
+
+.wrap-input-info.wrong-input:before {
+  content: "\e923";
+  font-family: 'icomoon' !important;
+  font-size: 1em;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  color: #ff6161; }
+.wrap-input-info.wrong-input input {
+  border: solid 1px #ff6161; }
+
+.wrap-input-info.wrong-input + .tooltip.wrong {
+  display: block; }
+
+.tooltip {
+  display: none;
+  padding: 0 10px 10px 0; }
+  .tooltip p {
+    font-size: .8em; }
+    .tooltip p i {
+      margin-right: 5px; }
+
+.tooltip.wrong {
+  padding: 0 10px 10px 0;
+  color: #ff6161; }
 
 .label-radio {
   color: #b9bbbd;
