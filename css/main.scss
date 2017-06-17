@@ -301,8 +301,8 @@ footer, .content-page:after {
     position: absolute;
     top: 50%;
   }
-  span:before { right: 20px; }
-  span:after { left: 20px; }
+  span:before { right: 30px; }
+  span:after { left: 30px; }
 
 
 }
@@ -335,6 +335,9 @@ footer, .content-page:after {
 .table {
   border: none;
   width: 100%;
+  @media only screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
   tr {
     th {
       color: white;

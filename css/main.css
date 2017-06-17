@@ -84,6 +84,18 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   display: inline-block;
   text-align: center;
   cursor: pointer; }
+  @media only screen and (min-width: 1200px) {
+    .custom-radio label {
+      width: 150px; } }
+  @media only screen and (max-width: 1200px) {
+    .custom-radio label {
+      width: 130px; } }
+  @media only screen and (max-width: 992px) {
+    .custom-radio label {
+      width: 100px; } }
+  @media only screen and (max-width: 768px) {
+    .custom-radio label {
+      width: 70px; } }
 .custom-radio input[type=radio] {
   display: none; }
 .custom-radio input[type=radio]:checked + label {
@@ -376,9 +388,9 @@ footer, .content-page:after {
     position: absolute;
     top: 50%; }
   .decorated-or span:before {
-    right: 20px; }
+    right: 30px; }
   .decorated-or span:after {
-    left: 20px; }
+    left: 30px; }
 
 .signUp-header {
   text-align: center;
@@ -405,6 +417,9 @@ footer, .content-page:after {
 .table {
   border: none;
   width: 100%; }
+  @media only screen and (min-width: 768px) {
+    .table {
+      margin-top: 30px; } }
   .table tr th {
     color: white;
     background-color: #466d98;
