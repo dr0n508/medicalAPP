@@ -1,0 +1,31 @@
+.table {
+  width: 100%;
+  border: none;
+  @media only screen and (min-width: 768px) {
+    margin-top: 30px;
+  }
+  tr {
+    th {
+      padding: 25px 0 15px;
+      color: white;
+      background-color: $blue-color;
+      text-transform: uppercase;
+      font-size: .8em;
+      &:first-child {
+        padding-left: 10px;
+        text-align: left;
+      }
+      &:last-child { padding-right: 10px; }
+    }
+    td {
+      padding: 25px 10px 0;
+      text-align: center;
+      &:first-child { text-align: left; }
+    }
+    .value { font-weight: 800; }
+    .value.good { color: $green-color;}
+    .value.bad { color: $red-color;}
+    .value.fair { color: $orange-color;}
+  }
+  tr:last-child td { padding: 25px 10px}
+}

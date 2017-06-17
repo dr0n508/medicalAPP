@@ -1,0 +1,52 @@
+.list-medical-indicators {
+  padding: 20px 10px;
+  background-color: #ebf1f7;
+  .wrap-medical-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 6px 20px 0px rgba(44, 81, 97, 0.15);
+    .medical-indicator {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      i {
+        flex-shrink: 0;
+        width: 25px;
+        @media only screen and (min-width: 1200px) { width: 40px; }
+      }
+      i:before { font-size: 1.5em;}
+      .name-medical-indicator {
+        font-size: 1em;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: $main-text-color;
+        margin-left: 10px;
+      }
+    }
+    .value-medical-indicator {
+      position: relative;
+      margin-right: 20px;
+      font-size: 1.15em;
+      font-weight: 600;
+      &:after {
+        content: '\e914';
+        font-family: 'icomoon' !important;
+        font-size: .5em;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        color: #999999;
+      }
+    }
+    .value-medical-indicator.good {color: $green-color;}
+    .value-medical-indicator.fair {color: $orange-color;}
+    .value-medical-indicator.bad {color: $red-color;}
+  }
+}

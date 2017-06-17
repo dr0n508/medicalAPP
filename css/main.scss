@@ -4,164 +4,32 @@
 @import "_colors.scss";
 @import "_btn.scss";
 @import "_inputs.scss";
+@import "_header.scss";
+@import "_footer.scss";
+@import "_table.scss";
+@import "_medical-indicators.scss";
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  color: $main-text-color;
+  @media only screen and (min-width: 1200px) { font-size: 22px; }
+  @media only screen and (max-width: 1200px) { font-size: 18px; }
+  @media only screen and (max-width: 992px) { font-size: 16px; }
+  @media only screen and (max-width: 768px) { font-size: 14px; }
+}
 
 .container {
   width: 100%;
   margin: 0 auto;
-  @media only screen and (min-width: 1200px) {
-    width: 970px;
-  }
-  @media only screen and (max-width: 1200px) {
-    width: 970px;
-  }
-  @media only screen and (max-width: 992px) {
-    width: 750px;
-  }
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    padding: 0 10px;
-  }
+  @media only screen and (min-width: 992px) { width: 970px; }
+  @media only screen and (max-width: 992px) { width: 750px; }
+  @media only screen and (max-width: 768px) { width: 100%;  padding: 0 10px; }
 }
-
-//.transition {
-//  -moz-transition: all .15s;
-//  -webkit-transition: all .15s;
-//  -o-transition: all .15s;
-//  transition: all .15s;
-//}
-
-//.db {
-//  display: block;
-//}
-
-header {
-  background-color: $blue-color;
-  color: white;
-  padding: 15px 0;
-  position: relative;
-  .name-window {
-    font-size: 1.1em;
-    font-weight: 600;
-    text-align: center;
-  }
-  .btn-back {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 10px;
-  }
-}
-
-.header-home {
-  .btn-add {
-    top: 50%;
-    transform: translateY(-50%);
-    position: absolute;
-    text-decoration: none;
-    right: 10px;
-    i:before { font-size: 1.2em}
-  }
-}
-
-.main-content {
-  //padding: 20px 0;
-}
-
-
-
-footer {
-  box-shadow: 0px 0px 19.6px 0.4px rgba(1, 2, 2, 0.17);
-  overflow: hidden;
-  padding: 15px 0;
-  .nav {
-    li {
-      float: left;
-      width: 25%;
-      text-align: center;
-      cursor: pointer;
-      a {
-        text-decoration: none;
-        i:before {
-          font-size: 30px;
-          color: #b7b9ce !important;
-        }
-      }
-      a:hover i:before { color: $blue-color !important}
-    }
-    li.active a i:before { color: $blue-color !important}
-  }
-}
-
-
-.main-input {
-  width: 100%;
-  border-radius: 5px;
-  border: solid 1px $light-text-color;
-  padding: 15px;
-  margin-bottom: 10px;
-  font-size: 1em;
-  &::-webkit-input-placeholder {color:$light-text-color; }
-  &::-moz-placeholder          {color:$light-text-color; }
-  &:-ms-input-placeholder      {color:$light-text-color; }
-}
-
-.wrap-input-info {
-  margin-bottom: 10px;
-  input {
-    margin-bottom: 0;
-  }
-  position: relative;
-  .btn-info {
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-  }
-}
-
-.wrap-input-info.wrong-input {
-  &:before {
-    content: "\e923";
-    font-family: 'icomoon' !important;
-    font-size: 1em;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15px;
-    color: $red-color;
-  }
-  input {
-    border: solid 1px $red-color;
-  }
-}
-.wrap-input-info.wrong-input + .tooltip.wrong {
-  display: block;
-}
-
-.tooltip {
-  display: none;
-  padding: 0 10px 10px 0;
-  p {
-    font-size: .8em;
-    i {
-      margin-right: 5px;
-    }
-  }
-}
-.tooltip.wrong {
-  padding: 0 10px 10px 0;
-  color: $red-color;
-}
-
-.label-radio {
-  color: $light-text-color;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 1.1em;
-}
-
 
 html, body {
   height: 100%;
@@ -179,67 +47,20 @@ footer, .content-page:after {
   height: 61px;
 }
 
-
-.list-medical-indicators {
-  background-color: #ebf1f7;
-  padding: 20px 10px;
-  .wrap-medical-indicator {
-    text-decoration: none;
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    box-shadow: 0px 6px 20px 0px rgba(44, 81, 97, 0.15);
-    .medical-indicator {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      i {
-        width: 25px;
-        flex-shrink: 0;
-        @media only screen and (min-width: 1200px) {
-          width: 40px;
-        }
-      }
-      i:before { font-size: 1.5em;}
-      .name-medical-indicator {
-        //width: 75%;
-        font-size: 1em;
-        font-weight: 800;
-        text-transform: uppercase;
-        color: $main-text-color;
-        margin-left: 10px;
-      }
-    }
-    .value-medical-indicator {
-      font-size: 1.15em;
-      font-weight: 600;
-      position: relative;
-      margin-right: 20px;
-      &:after {
-        content: '\e914';
-        font-family: 'icomoon' !important;
-        font-size: .5em;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -20px;
-        color: #999999;
-      }
-    }
-    .value-medical-indicator.good {color: $green-color;}
-    .value-medical-indicator.fair {color: $orange-color;}
-    .value-medical-indicator.bad {color: $red-color;}
-  }
-}
-
 .no-padding {
   padding: 0;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: $light-text-color;
+  margin: 25px 0 15px;
+}
 
 .progress-bars {
   padding: 20px 0;
@@ -267,28 +88,20 @@ footer, .content-page:after {
     border-radius: 5px;
     height: 200px;
     background-color: white;
-
   }
-}
-
-
-.form-profile {
-  padding: 20px 0;
 }
 
 .text-disclamer {
   font-size: .8em;
-  color: $main-text-color;
 }
 
 .decorated-or {
   text-align: center;
   overflow: hidden;
   margin: 30px 0;
-  color: $light-text-color;
   font-weight: 800;
-
   span {
+    color: $light-text-color;
     position: relative;
     font-size: 1em;
   }
@@ -303,18 +116,15 @@ footer, .content-page:after {
   }
   span:before { right: 30px; }
   span:after { left: 30px; }
-
-
-}
-.signUp-header {
-  text-align: center;
-  font-size: 1em;
-  color: $main-text-color;
 }
 
-.form-register, .form-reset-password, .form-add-measurements, .form-login {
+.form-register,
+.form-reset-password,
+.form-add-measurements,
+.form-login, .form-profile  {
   margin: 20px 0;
 }
+
 
 .link-forgot-password {
   display: block;
@@ -325,52 +135,9 @@ footer, .content-page:after {
   font-weight: 600;
 }
 
-.hr {
-  width: 100%;
-  height: 1px;
-  background-color: $light-text-color;
-  margin: 25px 0 15px;
-}
-
-.table {
-  border: none;
-  width: 100%;
-  @media only screen and (min-width: 768px) {
-    margin-top: 30px;
-  }
-  tr {
-    th {
-      color: white;
-      background-color: $blue-color;
-      text-transform: uppercase;
-      padding: 25px 0 15px;
-      font-size: .8em;
-      &:first-child {
-        padding-left: 10px;
-        text-align: left;
-      }
-      &:last-child {
-        padding-right: 10px;
-      }
-    }
-    td {
-      padding: 25px 10px 0;
-      text-align: center;
-      &:first-child {
-        text-align: left;
-      }
-    }
-    .value {
-      font-weight: 800;
-    }
-    .value.good { color: $green-color;}
-    .value.bad { color: $red-color;}
-    .value.fair { color: $orange-color;}
-  }
-  tr:last-child td { padding: 25px 10px}
 
 
-}
+
 
 
 //graph

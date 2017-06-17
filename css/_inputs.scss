@@ -1,14 +1,72 @@
-/******custom-radio****/
+.main-input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: solid 1px $light-text-color;
+  &::-webkit-input-placeholder {color:$light-text-color; }
+  &::-moz-placeholder          {color:$light-text-color; }
+  &:-ms-input-placeholder      {color:$light-text-color; }
+}
 
+.wrap-input-info {
+  margin-bottom: 10px;
+  input { margin-bottom: 0; }
+  position: relative;
+  .btn-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.wrap-input-info.wrong-input {
+  &:before {
+    content: "\e923";
+    position: absolute;
+    font-family: 'icomoon' !important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+    font-size: 1em;
+    color: $red-color;
+  }
+  input { border: solid 1px $red-color; }
+}
+.wrap-input-info.wrong-input + .tooltip.wrong { display: block; }
+
+.tooltip {
+  display: none;
+  padding: 0 10px 10px 0;
+  p {
+    font-size: .8em;
+    i { margin-right: 5px; }
+  }
+}
+.tooltip.wrong {
+  padding: 0 10px 10px 0;
+  color: $red-color;
+}
+
+.label-radio {
+  color: $light-text-color;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+//custom-radio
 
 .custom-radio {
-  //position: relative;
-  //padding: 10px 5px;
   label {
     position: relative;
-    text-transform: uppercase;
     font-size: .8em;
     font-weight: 600;
+    text-transform: uppercase;
     color: $main-text-color;
     border: solid 1px $main-text-color;
     border-radius: 5px;
@@ -17,23 +75,12 @@
     display: inline-block;
     text-align: center;
     cursor: pointer;
-    @media only screen and (min-width: 1200px) {
-      width: 150px;
-    }
-    @media only screen and (max-width: 1200px) {
-      width: 130px;
-    }
-    @media only screen and (max-width: 992px) {
-      width: 100px;
-    }
-    @media only screen and (max-width: 768px) {
-      width: 70px;
-    }
-
+    @media only screen and (min-width: 1200px) { width: 150px; }
+    @media only screen and (max-width: 1200px) { width: 130px; }
+    @media only screen and (max-width: 992px) { width: 100px; }
+    @media only screen and (max-width: 768px) { width: 70px; }
   }
-  input[type=radio] {
-    display: none;
-  }
+  input[type=radio] { display: none; }
   input[type=radio]:checked + label {
     background-color: $green-color;
     border: solid 1px $green-color;
@@ -44,10 +91,7 @@
 .wrap-custom-radio {
   display: flex;
   justify-content: flex-end;
-  .custom-radio {
-    //float: right;
-    margin-left: 10px;
-  }
+  .custom-radio { margin-left: 10px; }
 }
 
 .radio-inputs {
@@ -57,7 +101,7 @@
   margin-bottom: 10px;
 }
 
-/****custom checkbox****/
+//custom checkbox
 
 .custom-checkbox {
   position: relative;
@@ -73,9 +117,7 @@
       font-size: inherit;
     }
   }
-  input[type=checkbox] {
-    display: none;
-  }
+  input[type=checkbox] { display: none; }
   label:before {
     content: "";
     display: inline-block;
