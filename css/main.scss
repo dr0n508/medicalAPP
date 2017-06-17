@@ -122,10 +122,10 @@ footer, .content-page:after {
 }
 
 
-.list-count {
+.list-medical-indicators {
   background-color: #ebf1f7;
   padding: 20px 10px;
-  .wrap-count {
+  .wrap-medical-indicator {
     text-decoration: none;
     background-color: white;
     border-radius: 5px;
@@ -135,16 +135,13 @@ footer, .content-page:after {
     align-items: center;
     margin-bottom: 10px;
     box-shadow: 0px 6px 20px 0px rgba(44, 81, 97, 0.15);
-
-    .count {
+    .medical-indicator {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      i {
-        width: 25px;
-      }
+      i {  width: 25px; }
       i:before { font-size: 1.5em; }
-      .name-count {
+      .name-medical-indicator {
         width: 75%;
         font-size: 1em;
         font-weight: 800;
@@ -153,7 +150,7 @@ footer, .content-page:after {
         margin-left: 10px;
       }
     }
-    .value {
+    .value-medical-indicator {
       font-size: 1.15em;
       font-weight: 600;
       position: relative;
@@ -169,34 +166,12 @@ footer, .content-page:after {
         color: #999999;
       }
     }
-    .value.good {
-      color: $green-color;
-    }
-    .value.fair {
-      color: $orange-color;
-    }
-    .value.bad {
-      color: $red-color;
-    }
+    .value-medical-indicator.good {color: $green-color;}
+    .value-medical-indicator.fair {color: $orange-color;}
+    .value-medical-indicator.bad {color: $red-color;}
   }
 }
 
 .no-padding {
   padding: 0;
 }
-
-
-.icon-hemoglobin {
-  height: 24px;
-  background: url("../img/hemoglobin-ico.png") 0 50% no-repeat;
-  background-size: contain;
-}
-
-.icon-urinary {
-  height: 24px;
-  background: url("../img/urinaty-ico.png") 0 50% no-repeat;
-  background-size: contain;
-}
-
-
-

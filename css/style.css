@@ -91,3 +91,17 @@
   content: "\e923";
   color: #ff6161;
 }
+
+/**icon-png**/
+
+.icon-hemoglobin {
+  height: 24px;
+  background: url("../img/hemoglobin-ico.png") 0 50% no-repeat;
+  background-size: contain;
+}
+
+.icon-urinary {
+  height: 24px;
+  background: url("../img/urinaty-ico.png") 0 50% no-repeat;
+  background-size: contain;
+}
