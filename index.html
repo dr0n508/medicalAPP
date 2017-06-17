@@ -44,20 +44,59 @@
     </div>
 </header>
 
-<div class="container">
-    <form action="#">
-        <label for="">Gender</label>
-        <input type="radio" name="gender" value="male">
-        <input type="radio" name="gender" value="female">
-        <input type="number" placeholder="Weight (lbs)">
-        <input type="text" placeholder="Waist Measurement">
-        <input type="text" placeholder="Hip Measurement">
-        <label for="">Units</label>
-        <input type="radio" name="units" value="english">
-        <input type="radio" name="units" value="metric">
-        <button class="btn-big" type="submit">Enter</button>
-    </form>
+<div class="content-page">
+    <div class="container">
+        <form action="#">
+
+
+
+            <div class="radio-input">
+                <p class="label-radio">Gender</p>
+
+                <div class="wrap-custom-radio">
+                    <div class="custom-radio">
+                        <input value="male" id="male" name="gender" type="radio" checked>
+                        <label for="male">male</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input value="female" id="female" name="gender" type="radio">
+                        <label for="female">female</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <input class="main-input" type="text" placeholder="Weight (lbs)">
+            <input class="main-input" type="text" placeholder="Waist Measurement">
+            <input class="main-input" type="text" placeholder="Hip Measurement">
+
+
+            <div class="radio-input">
+                <p class="label-radio">Units</p>
+
+                <div class="wrap-custom-radio">
+                    <div class="custom-radio">
+                        <input value="english" id="english" name="units" type="radio" checked>
+                        <label for="english">english</label>
+                    </div>
+                    <div class="custom-radio">
+                        <input value="metric" id="metric" name="units" type="radio">
+                        <label for="metric">metric</label>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <button class="btn-big" type="submit">Enter</button>
+        </form>
+    </div>
 </div>
+
+
 
 
 

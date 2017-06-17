@@ -1,20 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext');
 @import "normalize.css";
 @import "_reset.scss";
+@import "_colors.scss";
 @import "_btn.scss";
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin-ext');
-
-$green-color: #28b857;
-$blue-color: #466d98;
-$main-text-color: #11354e;
-$light-text-color: #b9bbbd;
-$orange-color: #ffc001;
-$red-color: #ff6161;
-$icon-color: #5479a0;
-
-$green-text-color: #73e068;
-$orange-text-color: #ffcd00;
-$red-text-color: #ff6161;
+@import "_inputs.scss";
 
 .container {
   width: 100%;
@@ -55,6 +44,10 @@ header {
   }
 }
 
+.content-page {
+  padding: 20px 0 ;
+}
+
 
 
 footer {
@@ -78,3 +71,20 @@ footer {
     }
   }
 }
+
+.main-input {
+  width: 100%;
+  border-radius: 5px;
+  border: solid 1px $light-text-color;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.label-radio {
+  color: $light-text-color;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+

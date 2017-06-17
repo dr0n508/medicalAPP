@@ -1,0 +1,44 @@
+/******custom-radio****/
+
+
+.custom-radio {
+  //position: relative;
+  //padding: 10px 5px;
+  label {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $main-text-color;
+    border: solid 1px $main-text-color;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  input[type=radio]:checked + label {
+    background-color: $green-color;
+    border: solid 1px $green-color;
+    color: white;
+  }
+}
+
+.wrap-custom-radio {
+  display: flex;
+  justify-content: flex-end;
+  .custom-radio {
+    //float: right;
+    margin-left: 10px;
+  }
+}
+
+.radio-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?hwfit6');
+  src:  url('../fonts/icomoon.eot?hwfit6#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?hwfit6') format('truetype'),
+    url('../fonts/icomoon.woff?hwfit6') format('woff'),
+    url('../fonts/icomoon.svg?hwfit6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left-ico2:before {
+  content: "\e913";
+  color: #fff;
+}
+.icon-arrow-right:before {
+  content: "\e914";
+}
+.icon-bad-cholesterol2:before {
+  content: "\e915";
+  color: #5479a0;
+}
+.icon-blood-pressure2:before {
+  content: "\e916";
+  color: #5479a0;
+}
+.icon-creatinine2:before {
+  content: "\e917";
+  color: #5479a0;
+}
+.icon-good-cholesterol2:before {
+  content: "\e918";
+  color: #5479a0;
+}
+.icon-Heart-Rate2:before {
+  content: "\e919";
+  color: #5479a0;
+}
+.icon-home-icon2:before {
+  content: "\e91a";
+  color: #4b5084;
+}
+.icon-info-ico2:before {
+  content: "\e91b";
+  color: #466d98;
+}
+.icon-notification-ico2:before {
+  content: "\e91c";
+  color: #4b5084;
+}
+.icon-plus-ico2:before {
+  content: "\e91d";
+  color: #fff;
+}
+.icon-profile-ico2:before {
+  content: "\e91e";
+  color: #4b5084;
+}
+.icon-protein2:before {
+  content: "\e91f";
+  color: #5479a0;
+}
+.icon-reminder-ico2:before {
+  content: "\e920";
+  color: #4b5084;
+}
+.icon-sugar2:before {
+  content: "\e921";
+  color: #5479a0;
+}
+.icon-total-cholesterol2:before {
+  content: "\e922";
+  color: #5479a0;
+}
+.icon-wrong-ico2:before {
+  content: "\e923";
+  color: #ff6161;
+}
