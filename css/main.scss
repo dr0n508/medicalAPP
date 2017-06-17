@@ -304,3 +304,35 @@ footer, .content-page:after {
   background-color: $light-text-color;
   margin: 25px 0 15px;
 }
+
+.table {
+  border: none;
+  width: 100%;
+  tr {
+    th {
+      color: white;
+      background-color: $blue-color;
+      text-transform: uppercase;
+      padding: 25px 0 15px;
+      font-size: .8em;
+      &:first-child {
+        padding-left: 10px;
+      }
+      &:last-child {
+        padding-right: 10px;
+      }
+    }
+    td {
+      padding: 25px 10px 0;
+    }
+    .value {
+      font-weight: 800;
+    }
+    .value.good { color: $green-color;}
+    .value.bad { color: $red-color;}
+    .value.fair { color: $orange-color;}
+  }
+  tr:last-child td { padding: 25px 10px}
+
+
+}
