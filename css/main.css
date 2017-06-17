@@ -19,7 +19,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   font-weight: 800;
   font-size: 18px; }
   .btn-back i {
-    font-size: 14px; }
+    font-size: 14px;
+    margin-right: 10px; }
 
 .btn-big {
   width: 100%;
@@ -59,11 +60,45 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   .wrap-custom-radio .custom-radio {
     margin-left: 10px; }
 
-.radio-input {
+.radio-inputs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px; }
+
+/****custom checkbox****/
+.custom-checkbox {
+  position: relative;
+  padding: 10px 5px; }
+  .custom-checkbox label {
+    margin-left: 30px;
+    position: relative;
+    font-weight: 300;
+    font-size: 24px; }
+    .custom-checkbox label span {
+      color: #466d98;
+      font-weight: 600; }
+  .custom-checkbox input[type=checkbox] {
+    display: none; }
+  .custom-checkbox label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    margin-top: -10px;
+    border: solid 1px #11354e;
+    background: white;
+    border-radius: 5px; }
+  .custom-checkbox input[type=checkbox]:checked + label:before {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("../img/check.svg") 50% 50% no-repeat, #466d98;
+    background-size: 80%;
+    border: solid 1px #466d98; }
 
 .container {
   width: 100%;
@@ -96,6 +131,9 @@ header {
     top: 50%;
     transform: translateY(-50%);
     left: 10px; }
+
+.main-content {
+  padding: 20px 0; }
 
 footer {
   box-shadow: 0px 0px 19.6px 0.4px rgba(1, 2, 2, 0.17);

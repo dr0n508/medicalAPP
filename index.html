@@ -13,6 +13,7 @@
 <body>
 
 <div class="content-page">
+
     <header>
         <div class="container">
             <a href="#" class="btn-back"><i class="icon-arrow-left-ico2"></i>Back</a>
@@ -24,8 +25,8 @@
         <div class="container">
 
             <form action="#">
-                <div class="radio-input">
-                    <p class="label-radio">Gender</p>
+                <div class="radio-inputs">
+                    <span class="label-radio">Gender</span>
                     <div class="wrap-custom-radio">
                         <div class="custom-radio">
                             <input value="male" id="male" name="gender" type="radio" checked>
@@ -42,8 +43,8 @@
                 <input class="main-input" type="text" placeholder="Waist Measurement">
                 <input class="main-input" type="text" placeholder="Hip Measurement">
 
-                <div class="radio-input">
-                    <p class="label-radio">Units</p>
+                <div class="radio-inputs">
+                    <span class="label-radio">Units</span>
                     <div class="wrap-custom-radio">
                         <div class="custom-radio">
                             <input value="english" id="english" name="units" type="radio" checked>
@@ -55,6 +56,19 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="custom-checkbox">
+                    <input value="accept-disclaimer" id="accept-disclaimer" type="checkbox"/>
+                    <label for="accept-disclaimer">Accept Disclaimer</label>
+                </div>
+
+                <div class="custom-checkbox">
+                    <input value="accept-terms" id="accept-terms" type="checkbox"/>
+                    <label for="accept-terms">Accept <span>Terms</span></label>
+                </div>
+
+
 
                 <button class="btn-big" type="submit">Enter</button>
             </form>
