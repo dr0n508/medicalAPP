@@ -37,6 +37,9 @@
 
 .btn-big.orange {
   background-color: $orange-color;
+  &:hover {
+    background-color: #e7ab01;
+  }
 }
 
 .btn-graph {
