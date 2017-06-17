@@ -16,57 +16,44 @@
 
     <header>
         <div class="container">
-            <a href="#" class="btn-back"><i class="icon-arrow-left-ico2"></i>Back</a>
-            <h1 class="name-window">Profile</h1>
+            <a href="#" class="btn-back"><i class="icon-arrow-left-ico2"></i>Login</a>
+            <h1 class="name-window">Register</h1>
         </div>
     </header>
 
     <div class="main-content">
         <div class="container">
+            <a href="#" class="btn-big orange">SIGN UP WITH TRIVITA MEMBER ACCOUNT</a>
+            <p class="decorated-or"><span>or</span></p>
 
-            <form class="form-profile" action="#">
-                <div class="radio-inputs">
-                    <span class="label-radio">Gender</span>
-                    <div class="wrap-custom-radio">
-                        <div class="custom-radio">
-                            <input value="male" id="male" name="gender" type="radio" checked>
-                            <label for="male">male</label>
-                        </div>
-                        <div class="custom-radio">
-                            <input value="female" id="female" name="gender" type="radio">
-                            <label for="female">female</label>
-                        </div>
-                    </div>
+            <h2 class="signUp-header">SIGN UP WITH EMAIL</h2>
+
+
+
+            <form class="form-register" action="#">
+
+
+                <input class="main-input" name="register-first-name" type="text" placeholder="First Name">
+                <input class="main-input" name="register-last-name" type="text" placeholder="Last Name">
+                <input class="main-input"  name="register-email" type="text" placeholder="Email">
+                <input class="main-input"  name="register-phone" type="tel" placeholder="Phone Number">
+                <input class="main-input"  name="register-address" type="text" placeholder="Address">
+                <input class="main-input"  name="register-password" type="password" placeholder="Password">
+
+                <p class="text-disclamer">*Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec vitae tincidunt odio, semper commodo velit.</p>
+
+
+
+                <div class="custom-checkbox">
+                    <input value="accept-disclaimer" id="accept-disclaimer" type="checkbox"/>
+                    <label for="accept-disclaimer">Accept Disclaimer</label>
                 </div>
 
-                <input class="main-input" type="text" placeholder="Weight (lbs)">
-                <input class="main-input" type="text" placeholder="Waist Measurement">
-                <input class="main-input" type="text" placeholder="Hip Measurement">
-
-                <div class="radio-inputs">
-                    <span class="label-radio">Units</span>
-                    <div class="wrap-custom-radio">
-                        <div class="custom-radio">
-                            <input value="english" id="english" name="units" type="radio" checked>
-                            <label for="english">english</label>
-                        </div>
-                        <div class="custom-radio">
-                            <input value="metric" id="metric" name="units" type="radio">
-                            <label for="metric">metric</label>
-                        </div>
-                    </div>
+                <div class="custom-checkbox">
+                    <input value="accept-terms" id="accept-terms" type="checkbox" checked/>
+                    <label for="accept-terms">Accept <span>Terms</span></label>
                 </div>
-
-
-                <!--<div class="custom-checkbox">-->
-                    <!--<input value="accept-disclaimer" id="accept-disclaimer" type="checkbox"/>-->
-                    <!--<label for="accept-disclaimer">Accept Disclaimer</label>-->
-                <!--</div>-->
-
-                <!--<div class="custom-checkbox">-->
-                    <!--<input value="accept-terms" id="accept-terms" type="checkbox"/>-->
-                    <!--<label for="accept-terms">Accept <span>Terms</span></label>-->
-                <!--</div>-->
 
 
 
@@ -75,17 +62,5 @@
         </div>
     </div>
 </div>
-
-<footer>
-    <div class="container">
-        <ul class="nav">
-            <li class="active"><a href="#"><i class="icon-home-icon2"></i></a></li>
-            <li><a href="#"><i class="icon-notification-ico2"></i></a></li>
-            <li><a href="#"><i class="icon-reminder-ico2"></i></a></li>
-            <li><a href="#"><i class="icon-profile-ico2"></i></a></li>
-        </ul>
-    </div>
-</footer>
-
 </body>
 </html>

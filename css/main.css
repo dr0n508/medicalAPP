@@ -24,6 +24,9 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
     margin-right: 10px; }
 
 .btn-big {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
   padding: 20px 0;
   margin-top: 20px;
   border-radius: 5px;
@@ -295,5 +298,39 @@ footer, .content-page:after {
 
 .form-profile {
   padding: 20px 0; }
+
+.text-disclamer {
+  font-size: .8em;
+  color: #11354e; }
+
+.decorated-or {
+  text-align: center;
+  overflow: hidden;
+  margin: 30px 0;
+  color: #b9bbbd;
+  font-weight: 800; }
+  .decorated-or span {
+    position: relative;
+    font-size: 1em; }
+  .decorated-or span:before, .decorated-or span:after {
+    content: "";
+    width: 1000px;
+    height: 1px;
+    display: block;
+    background-color: #b9bbbd;
+    position: absolute;
+    top: 50%; }
+  .decorated-or span:before {
+    right: 20px; }
+  .decorated-or span:after {
+    left: 20px; }
+
+.signUp-header {
+  text-align: center;
+  font-size: 1em;
+  color: #11354e; }
+
+.form-register, .form-reset-password {
+  margin: 20px 0; }
 
 /*# sourceMappingURL=main.css.map */

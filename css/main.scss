@@ -218,3 +218,43 @@ footer, .content-page:after {
 .form-profile {
   padding: 20px 0;
 }
+
+.text-disclamer {
+  font-size: .8em;
+  color: $main-text-color;
+}
+
+.decorated-or {
+  text-align: center;
+  overflow: hidden;
+  margin: 30px 0;
+  color: $light-text-color;
+  font-weight: 800;
+
+  span {
+    position: relative;
+    font-size: 1em;
+  }
+  span:before, span:after {
+    content: "";
+    width: 1000px;
+    height: 1px;
+    display: block;
+    background-color: $light-text-color;
+    position: absolute;
+    top: 50%;
+  }
+  span:before { right: 20px; }
+  span:after { left: 20px; }
+
+
+}
+.signUp-header {
+  text-align: center;
+  font-size: 1em;
+  color: $main-text-color;
+}
+
+.form-register, .form-reset-password {
+  margin: 20px 0;
+}
