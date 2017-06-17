@@ -327,6 +327,10 @@ footer {
 #chart2 .ct-series-a .ct-point {
   stroke-width: 0; }
 
+.ct-label {
+  color: #11354e !important;
+  font-size: .8em; }
+
 * {
   box-sizing: border-box;
   margin: 0;
