@@ -214,7 +214,7 @@ header {
   header .btn-back {
     position: absolute;
     top: 50%;
-    left: 10px;
+    left: 20px;
     transform: translateY(-50%); }
 
 .header-home .btn-add {
@@ -281,7 +281,7 @@ footer {
     padding: 25px 10px; }
 
 .list-medical-indicators {
-  padding: 20px 10px;
+  padding: 20px 0;
   background-color: #ebf1f7; }
   .list-medical-indicators .wrap-medical-indicator {
     display: flex;
@@ -384,7 +384,7 @@ footer {
   @media only screen and (max-width: 768px) {
     .container {
       width: 100%;
-      padding: 0 10px; } }
+      padding: 0 20px; } }
 
 html, body {
   height: 100%; }
@@ -422,12 +422,11 @@ footer, .content-page:after {
   background-color: #466d98; }
   .progress-bars .wrap-progres-bar {
     width: 50%;
-    float: left;
-    padding: 0 10px; }
+    float: left; }
     .progress-bars .wrap-progres-bar:first-child {
-      padding: 0 5px 0 10px; }
+      padding: 0 10px 0 0; }
     .progress-bars .wrap-progres-bar:last-child {
-      padding: 0 10px 0 5px; }
+      padding: 0 0 0 10px; }
     .progress-bars .wrap-progres-bar .name-progres-bar {
       font-size: .8em;
       text-transform: uppercase;

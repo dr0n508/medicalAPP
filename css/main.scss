@@ -31,7 +31,7 @@
   margin: 0 auto;
   @media only screen and (min-width: 992px) { width: 970px; }
   @media only screen and (max-width: 992px) { width: 750px; }
-  @media only screen and (max-width: 768px) { width: 100%;  padding: 0 10px; }
+  @media only screen and (max-width: 768px) { width: 100%;  padding: 0 20px; }
 }
 
 html, body {
@@ -76,13 +76,8 @@ footer, .content-page:after {
   .wrap-progres-bar {
     width: 50%;
     float: left;
-    padding: 0 10px;
-    &:first-child {
-      padding: 0 5px 0 10px;
-    }
-    &:last-child {
-      padding: 0 10px 0 5px;
-    }
+    &:first-child { padding: 0 10px 0 0; }
+    &:last-child { padding: 0 0 0 10px; }
     .name-progres-bar {
       font-size: .8em;
       text-transform: uppercase;
