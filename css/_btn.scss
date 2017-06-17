@@ -30,16 +30,12 @@
 
 .btn-big.green {
   background-color: $green-color;
-  &:hover {
-    background-color: #28a452;
-  }
+  &:hover { background-color: #28a452; }
 }
 
 .btn-big.orange {
   background-color: $orange-color;
-  &:hover {
-    background-color: #e7ab01;
-  }
+  &:hover { background-color: #e7ab01; }
 }
 
 .btn-graph {
