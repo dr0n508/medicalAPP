@@ -217,15 +217,15 @@ header {
     left: 20px;
     transform: translateY(-50%); }
 
-.header-home .btn-add {
+.btn-add {
   position: absolute;
   top: 50%;
   right: 10px;
   transform: translateY(-50%);
   text-decoration: none; }
-  .header-home .btn-add i:before {
+  .btn-add i:before {
     font-size: 1.2em; }
-  .header-home .btn-add:hover i:before {
+  .btn-add:hover i:before {
     color: #b9bbbd; }
 
 footer {

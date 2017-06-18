@@ -16,17 +16,15 @@ header {
   }
 }
 
-.header-home {
-  .btn-add {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    text-decoration: none;
-    i:before { font-size: 1.2em}
-    &:hover i:before {
-      color: $light-text-color;
+.btn-add {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  text-decoration: none;
+  i:before { font-size: 1.2em}
+  &:hover i:before {
+    color: $light-text-color;
 
-    }
   }
 }
