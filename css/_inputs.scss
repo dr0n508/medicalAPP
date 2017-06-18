@@ -5,6 +5,7 @@
   font-size: 1em;
   border-radius: 5px;
   border: solid 1px $light-text-color;
+  line-height: 1.3;
   &::-webkit-input-placeholder {color:$light-text-color; }
   &::-moz-placeholder          {color:$light-text-color; }
   &:-ms-input-placeholder      {color:$light-text-color; }
@@ -15,7 +16,7 @@
 
 .wrap-input-info {
   margin-bottom: 10px;
-  input { margin-bottom: 0; }
+  input { margin-bottom: 0; line-height: 1.3; }
   position: relative;
   .btn-info {
     position: absolute;

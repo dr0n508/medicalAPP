@@ -67,7 +67,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   margin-bottom: 10px;
   font-size: 1em;
   border-radius: 5px;
-  border: solid 1px #b9bbbd; }
+  border: solid 1px #b9bbbd;
+  line-height: 1.3; }
   .main-input::-webkit-input-placeholder {
     color: #b9bbbd; }
   .main-input::-moz-placeholder {
@@ -81,7 +82,8 @@ div, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd
   margin-bottom: 10px;
   position: relative; }
   .wrap-input-info input {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 1.3; }
   .wrap-input-info .btn-info {
     position: absolute;
     top: 50%;
@@ -437,20 +439,24 @@ footer {
       width: 100%;
       padding: 0 20px; } }
 
-html, body {
+html,
+body {
   height: 100%; }
 
 .content-page {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -61px; }
+  position: relative;
+  min-height: 100%; }
 
-.content-page:after {
-  content: "";
-  display: block; }
+.main-content {
+  padding-bottom: 61px; }
 
-footer, .content-page:after {
-  height: 61px; }
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 61px;
+  background-color: white; }
 
 .no-padding {
   padding: 0; }
